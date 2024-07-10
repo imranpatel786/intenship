@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+  min-height: 100vh;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.514);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(165, 124, 42, 0.591);
+    border-radius: 10px;
+}
+.top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://i.pinimg.com/originals/c8/21/e6/c821e6f6a409765d5b593ec84eb06cc8.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.top .overlay{
+    position: relative;
+    width: 90%;
+    min-height: inherit;
+    background-color: white;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+    bottom:45%;
+
+}
+.text h1{
+    font-weight: 100;
+    width: 180px;
+    font-size: 4vw;
+
+}
+.text .image{
+    background-image: url(https://www.akamai.com/site/im-demo/perceptual-standard.jpg?imbypass=true);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.rtext p{
+    font-size: 12px;
+}
+.icons {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: right;
+    
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+
+}
+.b1{
+    width: 30%;
+    min-height: inherit;
+    background-image: url(https://img.freepik.com/premium-vector/most-popular-badge-ribbon-isolated-white-background-sticker-label-vector-illustration_100456-7383.jpg?w=360);
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding:30px;
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.macphun.com/img/uploads/customer/how-to/608/15542038745ca344e267fb80.28757312.jpg?q=85&w=1340);
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+} 
+.b2 .up p{
+    color: wheat;
+    text-align: center;
+    padding: 15%;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReuBbPuQcXqrSdOHTNiOUQH2XLAFnqe1Tnug&s);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.b2 .down .overlay{
+    position: relative;
+    width: 50%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.379);
+}   
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url(https://img.freepik.com/free-vector/floral-note-paper-template-vector_53876-161429.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+.b3  h1{
+    text-align: center;
+    padding: 30px;
+} 
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin: 20%;
+    width: 50%;
+    height: 40%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icon{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+
+    }
+    
+    .b2{
+        width: 100%;
+        
+        
+    }
+    .b2 up{
+        min-height: 30vh;
+        
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+    }
+
+}
